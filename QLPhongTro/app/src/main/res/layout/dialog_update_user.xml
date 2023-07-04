@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/lo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customborder"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User name"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:inputType="none"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtUser"
+            android:hint="Mật khẩu"
+            android:visibility="gone"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/edtRePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPass"
+            android:hint="Nhập lại mật khẩu"
+            android:visibility="gone"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtRePass"
+            android:hint="Full name"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtFullName"
+            android:hint="Phone Number"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPhoneNumber"
+            android:hint="Address"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/edtNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtAddress"
+            android:hint="Date of birth"
+            android:textColor="@color/black"
+            android:textColorHint="#7E7E7E"
+            android:textSize="15dp"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnCapNhat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Update"/>
+
+</LinearLayout>
