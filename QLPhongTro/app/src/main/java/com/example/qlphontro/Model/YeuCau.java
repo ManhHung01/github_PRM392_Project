@@ -1,4 +1,4 @@
-package com.codeandroid.qlphongtro.Model;
+package com.example.qlphontro.Model;
 
 public class YeuCau {
     //sdtYC TEXT, soPhong NUMBER, chuTro TEXT

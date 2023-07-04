@@ -1,4 +1,4 @@
-package com.codeandroid.qlphongtro.Model;
+package com.example.qlphontro.Model;
 
 public class TaiKhoanNH {
     private String soTK;
