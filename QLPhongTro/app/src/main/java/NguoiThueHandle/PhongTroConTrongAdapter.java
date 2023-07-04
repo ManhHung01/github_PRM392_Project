@@ -45,7 +45,12 @@ public class PhongTroConTrongAdapter extends RecyclerView.Adapter<PhongTroConTro
 
     @NonNull
     @Override
-
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.item_phong_tro, parent, false);
+        ViewHolder viewHolders = new ViewHolder(view);
+        return viewHolders;
+    }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
@@ -93,6 +98,20 @@ public class PhongTroConTrongAdapter extends RecyclerView.Adapter<PhongTroConTro
         return list==null?0:list.size();
     }
 
-    
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        TextView tvSoPhong, tvNgayThue, tvTienPhong, tvTienDien, tvTienNuoc, tvSDT, tvDatPhong, tvHuyDatPhong;
+        LinearLayout lnBTN;
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            tvSoPhong= itemView.findViewById(R.id.tvSoPhong);
+            tvNgayThue= itemView.findViewById(R.id.tvNgayThue);
+            tvTienPhong= itemView.findViewById(R.id.tvTienPhong);
+            tvTienDien= itemView.findViewById(R.id.tvTienDien);
+            tvTienNuoc= itemView.findViewById(R.id.tvTienNuoc);
+            tvSDT= itemView.findViewById(R.id.tvSDT);
+            lnBTN= itemView.findViewById(R.id.lnBTN);
+            tvDatPhong = itemView.findViewById(R.id.tvDatPhong);
+            tvHuyDatPhong = itemView.findViewById(R.id.tvHuyDatPhong);
+        }
     }
 }
