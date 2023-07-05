@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.QLPhontro" parent="Base.Theme.QLPhontro" />
+    <style name="Theme.QLPhontro.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.QLPhontro.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.QLPhontro.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
