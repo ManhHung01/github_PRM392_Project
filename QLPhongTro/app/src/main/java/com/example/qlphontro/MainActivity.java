@@ -48,5 +48,23 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }
-}
+
+
+        @Override
+        public void onPageSelected(int position) {
+            switch (position) {
+                case 0:
+                    btnNavi.getMenu().findItem(R.id.home).setChecked(true);
+                    break;
+                case 1:
+                    btnNavi.getMenu().findItem(R.id.support).setChecked(true);
+                    break;
+                case 2:
+                    btnNavi.getMenu().findItem(R.id.support1).setChecked(true);
+                    break;
+            }
+
+        }
+
+    }
 }
