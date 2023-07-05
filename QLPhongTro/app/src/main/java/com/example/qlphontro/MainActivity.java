@@ -34,6 +34,19 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-    }
 
+
+        private void setupViewPager() {
+            ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+            viewPager.setAdapter(adapter);
+
+            viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+                @Override
+                public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+                }
+
+            }
+        }
+}
 }
