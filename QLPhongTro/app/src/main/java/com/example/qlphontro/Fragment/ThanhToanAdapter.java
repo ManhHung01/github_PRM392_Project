@@ -1,4 +1,4 @@
-package com.example.qlphontro.Fragment;
+package com.codeandroid.qlphongtro.NguoiThueHandle;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.codeandroid.qlphongtro.Model.ThanhToan;
 import com.codeandroid.qlphongtro.R;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -40,5 +42,35 @@ public class ThanhToanAdapter extends RecyclerView.Adapter<ThanhToanAdapter.View
         this.context = context;
     }
 
-   
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.item_lich_su_tt, parent, false);
+        ThanhToanAdapter.ViewHolder viewHolders = new ThanhToanAdapter.ViewHolder(view);
+        return viewHolders;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        ThanhToan thanhToan= list.get(position);
+        holder.tvNgay.setText("Date of payment: "+thanhToan.getNgayThanhToan());
+        holder.tvTien.setText("Fee: "+thanhToan.getTongTien()+" VNĐ");
+        holder.tvNoiDung.setText("Content: " + thanhToan.getNoiDung());
+    }
+
+    @Override
+    public int getItemCount() {
+        return list==null?0:list.size();
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        TextView tvNgay, tvTien, tvNoiDung;
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            tvNgay= itemView.findViewById(R.id.tvNgayTT);
+            tvTien= itemView.findViewById(R.id.tvTienTT);
+            tvNoiDung = itemView.findViewById(R.id.tvNoiDung);
+        }
+    }
 }
