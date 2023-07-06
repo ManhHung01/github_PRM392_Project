@@ -1,6 +1,6 @@
-package com.example.qlphontro.Fragment;
+package com.example.qlphontro.Fragment.HandlePhongTro;
 
-import static com.codeandroid.qlphongtro.LoginActivity.sqlHelper;
+import static com.example.qlphontro.LoginActivity.sqlHelper;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -17,9 +17,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.codeandroid.qlphongtro.Model.PhongTro;
-import com.codeandroid.qlphongtro.Model.ThanhToan;
-import com.codeandroid.qlphongtro.R;
+import com.example.qlphontro.Model.*;
+import com.example.qlphontro.Model.PhongTro;
+import com.example.qlphontro.Model.ThanhToan;
+import com.example.qlphontro.R;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.codeandroid.qlphongtro.Fragment;
+package com.example.qlphontro.Fragment.HandleYeuCau;
 
-import static com.codeandroid.qlphongtro.LoginActivity.sqlHelper;
+import static com.example.qlphontro.LoginActivity.sqlHelper;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
