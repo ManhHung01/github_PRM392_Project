@@ -1,4 +1,4 @@
-package NguoiThueHandle;
+package com.example.qlphontro.NguoiThueHandle;
 
 public interface IOnClickDatPhong {
     void iOnClickDatPhong(int poss);
