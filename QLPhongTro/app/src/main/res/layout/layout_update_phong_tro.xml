@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Room Number: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtNt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Date of hire: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Fee: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtTD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Electricity bill: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Water bill: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtSDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Phone Number: "
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:text="Edit"/>
+
+
+</LinearLayout>
