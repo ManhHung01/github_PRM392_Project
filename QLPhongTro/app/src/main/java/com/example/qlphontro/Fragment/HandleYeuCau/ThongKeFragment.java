@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.example.qlphontro.Fragment.HandleThongKe.ListThongKeAdapter;
+import com.example.qlphontro.Fragment.HandleThongKe.ListThongKePhongAdapter;
 import com.example.qlphontro.Model.PhongTro;
 import com.example.qlphontro.Model.ThanhToan;
 import com.example.qlphontro.R;
